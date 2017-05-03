@@ -1,21 +1,21 @@
 create table players (
 
-  pid serial primary key,
-  pname varchar(64) not null UNIQUE,
-  clubid varchar(64) not null,
-  countryid varchar(64) not null
+  Pid serial primary key,
+  Pname varchar(64) not null UNIQUE,
+  Clubid int not null,
+  Countryid int not null
 
 );
 
 create table clubs(
-  clubid serial primary key,
-  clubname varchar(64) not null UNIQUE
+  Clubid serial primary key,
+  Clubname varchar(64) not null UNIQUE
 
 );
 
 create table countries(
-  countryid serial primary key,
-  country varchar(64) not null UNIQUE
+  Countryid serial primary key,
+  Countryname varchar(64) not null UNIQUE
 
 );
 
